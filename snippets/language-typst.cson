@@ -1,0 +1,111 @@
+'.source.typst':
+  'Set Rule':
+    prefix: 'set'
+    body: '#set ${1:function}(${2:args})'
+  'Show Rule':
+    prefix: 'show'
+    body: '#show ${1:selector}: ${2:replacement}'
+  'Let Binding':
+    prefix: 'let'
+    body: '#let ${1:name} = ${2:value}'
+  'Let Function':
+    prefix: 'letfn'
+    body: '#let ${1:name}(${2:args}) = ${3:body}'
+  'Import':
+    prefix: 'import'
+    body: '#import "${1:module}": ${2:items}'
+  'Include':
+    prefix: 'include'
+    body: '#include "${1:file}"'
+  'If':
+    prefix: 'if'
+    body: '#if ${1:condition} {\\n\\t${2:body}\\n}'
+  'If Else':
+    prefix: 'ife'
+    body: '#if ${1:condition} {\\n\\t${2:body}\\n} else {\\n\\t${3:else}\\n}'
+  'For Loop':
+    prefix: 'for'
+    body: '#for ${1:item} in ${2:collection} {\\n\\t${3:body}\\n}'
+  'While Loop':
+    prefix: 'while'
+    body: '#while ${1:condition} {\\n\\t${2:body}\\n}'
+  'Figure':
+    prefix: 'figure'
+    body: '#figure(\\n\\t${1:content},\\n\\tcaption: [${2:caption}],\\n) <${3:label}>'
+  'Table':
+    prefix: 'table'
+    body: '#table(\\n\\tcolumns: ${1:2},\\n\\t${2:cells}\\n)'
+  'Image':
+    prefix: 'image'
+    body: '#image("${1:path}", width: ${2:80%})'
+  'List':
+    prefix: 'list'
+    body: '- ${1:item}'
+  'Enum':
+    prefix: 'enum'
+    body: '+ ${1:item}'
+  'Heading 1':
+    prefix: 'h1'
+    body: '= ${1:title}'
+  'Heading 2':
+    prefix: 'h2'
+    body: '== ${1:title}'
+  'Heading 3':
+    prefix: 'h3'
+    body: '=== ${1:title}'
+  'Inline Math':
+    prefix: 'math'
+    body: '$${1:expression}$'
+  'Display Math':
+    prefix: 'dmath'
+    body: '$ ${1:expression} $'
+  'Code Block':
+    prefix: 'code'
+    body: '```${1:lang}\\n${2:code}\\n```'
+  'Inline Code':
+    prefix: 'ic'
+    body: '`${1:code}`'
+  'Bold':
+    prefix: 'bold'
+    body: '*${1:text}*'
+  'Italic':
+    prefix: 'italic'
+    body: '_${1:text}_'
+  'Link':
+    prefix: 'link'
+    body: '#link("${1:url}")[${2:text}]'
+  'Label':
+    prefix: 'label'
+    body: '<${1:name}>'
+  'Reference':
+    prefix: 'ref'
+    body: '@${1:label}'
+  'Page Break':
+    prefix: 'pagebreak'
+    body: '#pagebreak()'
+  'Align':
+    prefix: 'align'
+    body: '#align(${1:center})[${2:content}]'
+  'Block':
+    prefix: 'block'
+    body: '#block(${1:args})[${2:content}]'
+  'Box':
+    prefix: 'box'
+    body: '#box(${1:args})[${2:content}]'
+  'Grid':
+    prefix: 'grid'
+    body: '#grid(\\n\\tcolumns: ${1:(1fr, 1fr)},\\n\\t${2:cells}\\n)'
+  'Bibliography':
+    prefix: 'bibliography'
+    body: '#bibliography("${1:refs.bib}")'
+  'Document Template':
+    prefix: 'document'
+    body: """
+      #set document(title: "${1:Title}", author: "${2:Author}")
+      #set page(paper: "${3:a4}")
+      #set text(font: "${4:New Computer Modern}", size: ${5:11pt})
+
+      = ${1:Title}
+
+      ${6:content}
+    """

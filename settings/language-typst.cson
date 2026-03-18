@@ -1,0 +1,4 @@
+'.source.typst':
+  editor:
+    commentStart: '// '
+    softWrap: true
