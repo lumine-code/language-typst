@@ -12,9 +12,7 @@ Typst language with modern tree-sitter grammar and legacy TextMate grammar.
 
 To install `language-typst` search for [language-typst](https://web.pulsar-edit.dev/packages/language-typst) in the Install pane of the Pulsar settings or run `ppm install language-typst`. Alternatively, you can run `ppm install asiloisad/pulsar-language-typst` to install a package directly from the GitHub repository.
 
-## Grammars
-
-### Tree-sitter (modern)
+## Tree-sitter (modern)
 
 Based on [tree-sitter-typst](https://github.com/uben0/tree-sitter-typst). Used by default when Pulsar's modern tree-sitter parser is enabled.
 
@@ -25,7 +23,7 @@ Provides:
 - Symbol navigation for headings, function definitions, variables, and labels
 - Hyperlink and TODO detection in comments
 
-### TextMate (legacy)
+## TextMate (legacy)
 
 Based on [typst-grammar](https://github.com/michidk/typst-grammar) (used by GitHub Linguist), patched for Pulsar's `second-mate` engine. Used as fallback when tree-sitter is disabled.
 
