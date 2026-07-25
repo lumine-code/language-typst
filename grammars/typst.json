@@ -1705,7 +1705,5 @@
       ]
     }
   },
-  "fileTypes": [
-    "typ"
-  ]
+  "fileTypes": ["typ"]
 }

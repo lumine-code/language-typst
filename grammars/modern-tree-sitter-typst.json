@@ -1,0 +1,22 @@
+{
+  "name": "Typst",
+  "scopeName": "source.typst",
+  "type": "modern-tree-sitter",
+  "parser": "tree-sitter-typst",
+  "injectionRegex": "^typst$",
+  "firstLineRegex": ["#set\\s", "#import\\s"],
+  "fileTypes": ["typ"],
+  "comments": {
+    "start": "// ",
+    "line": "//",
+    "block": ["/*", "*/"]
+  },
+  "treeSitter": {
+    "parserSource": "github:uben0/tree-sitter-typst#46cf4ded12ee974a70bf8457263b67ad7ee0379d",
+    "grammar": "ts/tree-sitter-typst.wasm",
+    "highlightsQuery": "ts/highlights.scm",
+    "foldsQuery": "ts/folds.scm",
+    "indentsQuery": "ts/indents.scm",
+    "tagsQuery": "ts/tags.scm"
+  }
+}

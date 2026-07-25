@@ -4,28 +4,25 @@ Typst language with modern tree-sitter grammar and legacy TextMate grammar.
 
 ## Features
 
-- **Tree-sitter grammar**: Typst with syntax highlighting, code folding, indentation, and symbol navigation.
-- **TextMate grammar**: fallback for Typst markup and code modes.
-- **30+ snippets**: for common Typst constructs (document setup, figures, math, headings, etc.).
+- **Grammars**: provides both Tree-sitter and TextMate grammars.
+- **Syntax highlighting**: accurate highlighting for markup, code and math modes.
+- **Code folding**: folds sections, blocks, function calls and raw blocks.
+- **Auto-indentation**: indents inside braces, brackets and parentheses.
+- **Symbol navigation**: headings, function definitions, variables and labels.
+- **Snippets**: 30+ snippets for common Typst constructs (document setup, figures, math, headings, etc.).
 
 ## Installation
 
-To install `language-typst` search for [language-typst](https://web.pulsar-edit.dev/packages/language-typst) in the Install pane of the Pulsar settings or run `ppm install language-typst`. Alternatively, you can run `ppm install asiloisad/pulsar-language-typst` to install a package directly from the GitHub repository.
+To install `language-typst` search for _language-typst_ in the Install pane of the Lumine settings or run `lumine --install lumine-code/language-typst`.
 
-## Tree-sitter (modern)
+## Usage
 
-Based on [tree-sitter-typst](https://github.com/uben0/tree-sitter-typst). Used by default when Pulsar's modern tree-sitter parser is enabled.
+The Tree-sitter grammar is based on [tree-sitter-typst](https://github.com/uben0/tree-sitter-typst) and is used by default. The TextMate grammar is based on [typst-grammar](https://github.com/michidk/typst-grammar) and serves as a fallback when tree-sitter is disabled.
 
-Provides:
-- Accurate syntax highlighting for markup, code, and math modes
-- Code folding for sections, blocks, function calls, and raw blocks
-- Auto-indentation inside braces, brackets, and parentheses
-- Symbol navigation for headings, function definitions, variables, and labels
-- Hyperlink and TODO detection in comments
+## Services
 
-## TextMate (legacy)
-
-Based on [typst-grammar](https://github.com/michidk/typst-grammar) (used by GitHub Linguist), patched for Pulsar's `second-mate` engine. Used as fallback when tree-sitter is disabled.
+- **hyperlink.injection** (`0.1.0`): consumed to detect hyperlinks inside Typst comments.
+- **todo.injection** (`0.1.0`): consumed to highlight TODO-style keywords inside Typst comments.
 
 ## Contributing
 
