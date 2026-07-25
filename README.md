@@ -21,8 +21,8 @@ The Tree-sitter grammar is based on [tree-sitter-typst](https://github.com/uben0
 
 ## Services
 
-- **hyperlink.injection** (`0.1.0`): consumed to detect hyperlinks inside Typst comments.
-- **todo.injection** (`0.1.0`): consumed to highlight TODO-style keywords inside Typst comments.
+- **hyperlink.injection** (`^1.0.0`): consumed to detect hyperlinks inside Typst comments.
+- **todo.injection** (`^1.0.0`): consumed to highlight TODO-style keywords inside Typst comments.
 
 ## Contributing
 
