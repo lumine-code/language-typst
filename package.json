@@ -7,9 +7,11 @@
     "url": "https://github.com/lumine-code/language-typst/issues"
   },
   "keywords": [
-    "tree-sitter",
-    "typst",
-    "language"
+    "typesetting",
+    "document",
+    "markup",
+    "pdf",
+    "tree-sitter"
   ],
   "version": "1.0.0",
   "license": "MIT",
