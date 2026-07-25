@@ -1,6 +1,6 @@
 # language-typst
 
-Typst language with modern tree-sitter grammar and legacy TextMate grammar.
+Typst language support with tree-sitter and TextMate grammars.
 
 ## Features
 

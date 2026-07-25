@@ -1,7 +1,7 @@
 {
   "name": "language-typst",
   "author": "lumine-code",
-  "description": "Typst language with modern tree-sitter grammar and legacy TextMate grammar",
+  "description": "Typst language support with tree-sitter and TextMate grammars.",
   "repository": "https://github.com/lumine-code/language-typst",
   "bugs": {
     "url": "https://github.com/lumine-code/language-typst/issues"
