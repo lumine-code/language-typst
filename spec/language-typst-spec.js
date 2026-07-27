@@ -28,4 +28,21 @@ describe("language-typst", () => {
       expect(scopes[0]).toBe("source.typst");
     }
   });
+
+  // The per-grammar settings live in the `language` namespace; under the
+  // legacy `editor` one nothing reads them.
+  describe("scoped settings", () => {
+    it("soft wraps Typst documents", async () => {
+      const editor = await atom.workspace.open("document.typ");
+      expect(editor.getGrammar().scopeName).toBe("source.typst");
+      expect(editor.isSoftWrapped()).toBe(true);
+    });
+
+    it("comments a line with two slashes", async () => {
+      const editor = await atom.workspace.open("document.typ");
+      editor.setText("= Heading");
+      editor.toggleLineCommentsForBufferRows(0, 0);
+      expect(editor.lineTextForBufferRow(0)).toBe("// = Heading");
+    });
+  });
 });

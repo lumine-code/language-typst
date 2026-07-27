@@ -1,6 +1,6 @@
 {
   ".source.typst": {
-    "editor": {
+    "language": {
       "commentStart": "// ",
       "softWrap": true
     }
