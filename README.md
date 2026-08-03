@@ -4,7 +4,7 @@ Typst language support with tree-sitter and TextMate grammars.
 
 ## Features
 
-- **Grammars**: provides both Tree-sitter and TextMate grammars.
+- **Grammars**: provides both Tree-sitter and TextMate grammars, built from [tree-sitter-typst](https://github.com/uben0/tree-sitter-typst).
 - **Syntax highlighting**: accurate highlighting for markup, code and math modes.
 - **Code folding**: folds sections, blocks, function calls and raw blocks.
 - **Auto-indentation**: indents inside braces, brackets and parentheses.
