@@ -9,7 +9,7 @@ describe("language-typst", () => {
       .filter((grammar) => grammar.scopeName === "source.typst");
     const types = grammars.map((grammar) => grammar.constructor.name).sort();
     expect(grammars.length).toBe(2);
-    expect(types).toContain("WASMTreeSitterGrammar");
+    expect(types).toContain("TreeSitterGrammar");
   });
 
   it("selects a Typst grammar for .typ files", () => {

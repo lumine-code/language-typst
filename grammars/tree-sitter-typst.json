@@ -1,7 +1,7 @@
 {
   "name": "Typst",
   "scopeName": "source.typst",
-  "type": "modern-tree-sitter",
+  "type": "tree-sitter",
   "parser": "tree-sitter-typst",
   "injectionRegex": "^typst$",
   "firstLineRegex": ["#set\\s", "#import\\s"],
