@@ -1,4 +1,4 @@
-; tags.scm for Typst (Pulsar tree-sitter)
+; tags.scm for Typst (tree-sitter)
 ; Symbol navigation for headings, functions, labels
 
 ; Headings

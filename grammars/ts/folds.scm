@@ -1,4 +1,4 @@
-; folds.scm for Typst (Pulsar tree-sitter)
+; folds.scm for Typst (tree-sitter)
 
 [
   (set)

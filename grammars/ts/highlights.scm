@@ -1,4 +1,4 @@
-; highlights.scm for Typst (Pulsar tree-sitter)
+; highlights.scm for Typst (tree-sitter)
 ; Adapted from tree-sitter-typst and nvim-treesitter queries
 
 ; FUNCTIONS & CALLS

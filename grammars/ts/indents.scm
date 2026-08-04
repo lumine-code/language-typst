@@ -1,4 +1,4 @@
-; indents.scm for Typst (Pulsar tree-sitter)
+; indents.scm for Typst (tree-sitter)
 
 [
   "{"
