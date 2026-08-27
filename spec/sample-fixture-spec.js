@@ -8,7 +8,7 @@ const path = require("path");
 describe("Typst sample fixtures", () => {
   beforeEach(async () => {
     await lumine.packages.activatePackage("language-typst");
-    lumine.config.set("language.useTreeSitterParsers", true);
+    lumine.config.set("editor.useTreeSitterParsers", true);
   });
 
   it("parses sample.typ without error", async () => {

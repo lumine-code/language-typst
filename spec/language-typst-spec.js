@@ -29,7 +29,7 @@ describe("language-typst", () => {
     }
   });
 
-  // The per-grammar settings live in the `language` namespace; under the
+  // The per-grammar settings live in the `grammar` namespace; under the
   // legacy `editor` one nothing reads them.
   describe("scoped settings", () => {
     it("soft wraps Typst documents", async () => {
