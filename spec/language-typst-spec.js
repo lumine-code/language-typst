@@ -3,12 +3,12 @@ describe("language-typst", () => {
     await lumine.packages.activatePackage("language-typst");
   });
 
-  it("loads the Typst grammars", () => {
+  it("loads the Typst grammar", () => {
     const grammars = lumine.grammars
-      .getGrammars({ includeTreeSitter: true })
+      .getGrammars()
       .filter((grammar) => grammar.scopeName === "source.typst");
     const types = grammars.map((grammar) => grammar.constructor.name).sort();
-    expect(grammars.length).toBe(2);
+    expect(grammars.length).toBe(1);
     expect(types).toContain("TreeSitterGrammar");
   });
 

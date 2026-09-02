@@ -1,10 +1,10 @@
 # language-typst
 
-Typst language support with tree-sitter and TextMate grammars.
+Typst language support.
 
 ## Features
 
-- **Grammars**: provides both Tree-sitter and TextMate grammars, built from [tree-sitter-typst](https://github.com/uben0/tree-sitter-typst).
+- **Grammars**: provides a Tree-sitter grammar built from [tree-sitter-typst](https://github.com/uben0/tree-sitter-typst).
 - **Syntax highlighting**: accurate highlighting for markup, code and math modes.
 - **Code folding**: folds sections, blocks, function calls and raw blocks.
 - **Auto-indentation**: indents inside braces, brackets and parentheses.
@@ -17,7 +17,7 @@ To install `language-typst` search for it in the Install pane of the Lumine sett
 
 ## Usage
 
-The Tree-sitter grammar is based on [tree-sitter-typst](https://github.com/uben0/tree-sitter-typst) and is used by default. The TextMate grammar is based on [typst-grammar](https://github.com/michidk/typst-grammar) and serves as a fallback when tree-sitter is disabled.
+The grammar is based on [tree-sitter-typst](https://github.com/uben0/tree-sitter-typst).
 
 ## Services
 
