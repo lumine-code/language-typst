@@ -50,7 +50,12 @@
 (ref) @variable.other.reference.typst
 (number) @constant.numeric.typst
 (string) @string.quoted.typst
-(content ["[" "]"] @punctuation.definition.content.typst)
+("[" @punctuation.definition.content.typst
+  (#is? test.childOfType content)
+  (#is? test.first true))
+("]" @punctuation.definition.content.typst
+  (#is? test.childOfType content)
+  (#is? test.last true))
 (bool) @constant.language.boolean.typst
 (none) @constant.language.typst
 (auto) @constant.language.typst
