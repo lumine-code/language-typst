@@ -3,7 +3,7 @@
   "scopeName": "source.typst",
   "type": "tree-sitter",
   "parser": "tree-sitter-typst",
-  "injectionNames": ["typst"],
+  "injectionNames": ["typst", "typ"],
   "firstLineRegex": ["#set\\s", "#import\\s"],
   "fileTypes": ["typ"],
   "comments": {
