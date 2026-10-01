@@ -18,6 +18,7 @@
     "highlightsQuery": "typst-highlights.scm",
     "foldsQuery": "typst-folds.scm",
     "indentsQuery": "typst-indents.scm",
-    "tagsQuery": "typst-tags.scm"
+    "tagsQuery": "typst-tags.scm",
+    "injectionsQuery": "typst-injections.scm"
   }
 }

@@ -19,11 +19,11 @@ describe("Typst highlight query locality", () => {
   }
 
   async function capturesForRows(startRow, endRow) {
-    const groups = await editor.getGrammarQueryCaptureGroups("highlightsQuery", {
+    const query = await editor.getGrammar().getQuery("highlightsQuery");
+    return query.captures(editor.languageMode.tree.rootNode, {
       startPosition: new Point(startRow, 0),
       endPosition: new Point(endRow, 0),
     });
-    return groups.find(({ grammar }) => grammar === editor.getGrammar())?.captures ?? [];
   }
 
   it("scopes both delimiters of empty and non-empty content", async () => {
@@ -51,7 +51,7 @@ describe("Typst highlight query locality", () => {
     lines.push("]");
     await setUp(lines.join("\r\n"));
 
-    expect((await editor.getSyntaxDiagnostics()).hasError).toBe(false);
+    expect(editor.languageMode.tree.rootNode.hasError).toBe(false);
     const captures = await capturesForRows(3000, 3006);
     expect(captures.length).toBeLessThanOrEqual(64);
     expect(

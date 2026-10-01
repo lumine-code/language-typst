@@ -19,11 +19,6 @@ To install `language-typst` search for it in the Install pane of the Lumine sett
 
 The grammar is based on [tree-sitter-typst](https://github.com/uben0/tree-sitter-typst).
 
-## Services
-
-- `hyperlink.injection`: consumed to detect hyperlinks inside Typst comments.
-- `todo.injection`: consumed to highlight TODO-style keywords inside Typst comments.
-
 ## Contributing
 
 Got ideas to make this package better, found a bug, or want to help add new features? Just drop your thoughts on GitHub. Any feedback is welcome!

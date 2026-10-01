@@ -16,6 +16,6 @@ describe("Typst sample fixtures", () => {
     await languageMode.ready;
 
     expect(editor.getGrammar().scopeName).toBe("source.typst");
-    expect((await editor.getSyntaxDiagnostics()).hasError).toBe(false);
+    expect(editor.languageMode.tree.rootNode.hasError).toBe(false);
   });
 });
