@@ -26,27 +26,27 @@
     },
     "If": {
       "prefix": "if",
-      "body": "#if ${1:condition} {\\n\\t${2:body}\\n}"
+      "body": "#if ${1:condition} {\n\t${2:body}\n}"
     },
     "If Else": {
       "prefix": "ife",
-      "body": "#if ${1:condition} {\\n\\t${2:body}\\n} else {\\n\\t${3:else}\\n}"
+      "body": "#if ${1:condition} {\n\t${2:body}\n} else {\n\t${3:else}\n}"
     },
     "For Loop": {
       "prefix": "for",
-      "body": "#for ${1:item} in ${2:collection} {\\n\\t${3:body}\\n}"
+      "body": "#for ${1:item} in ${2:collection} {\n\t${3:body}\n}"
     },
     "While Loop": {
       "prefix": "while",
-      "body": "#while ${1:condition} {\\n\\t${2:body}\\n}"
+      "body": "#while ${1:condition} {\n\t${2:body}\n}"
     },
     "Figure": {
       "prefix": "figure",
-      "body": "#figure(\\n\\t${1:content},\\n\\tcaption: [${2:caption}],\\n) <${3:label}>"
+      "body": "#figure(\n\t${1:content},\n\tcaption: [${2:caption}],\n) <${3:label}>"
     },
     "Table": {
       "prefix": "table",
-      "body": "#table(\\n\\tcolumns: ${1:2},\\n\\t${2:cells}\\n)"
+      "body": "#table(\n\tcolumns: ${1:2},\n\t${2:cells}\n)"
     },
     "Image": {
       "prefix": "image",
@@ -82,7 +82,7 @@
     },
     "Code Block": {
       "prefix": "code",
-      "body": "```${1:lang}\\n${2:code}\\n```"
+      "body": "```${1:lang}\n${2:code}\n```"
     },
     "Inline Code": {
       "prefix": "ic",
@@ -126,7 +126,7 @@
     },
     "Grid": {
       "prefix": "grid",
-      "body": "#grid(\\n\\tcolumns: ${1:(1fr, 1fr)},\\n\\t${2:cells}\\n)"
+      "body": "#grid(\n\tcolumns: ${1:(1fr, 1fr)},\n\t${2:cells}\n)"
     },
     "Bibliography": {
       "prefix": "bibliography",
