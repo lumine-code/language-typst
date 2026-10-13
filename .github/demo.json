@@ -1,0 +1,16 @@
+{
+  "title": "language-typst",
+  "description": "Typst syntax highlighting in the editor.",
+  "recordedOn": "2026-10-13",
+  "sourceRevision": "8b1b0b8a811fcc610bcaeee2b986ddb0c5a85cf5",
+  "mode": "normal",
+  "fontSettings": "default",
+  "images": [
+    {
+      "file": "demo.png",
+      "label": "Typst syntax highlighting at the default editor font size.",
+      "width": 1100,
+      "height": 820
+    }
+  ]
+}

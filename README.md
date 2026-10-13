@@ -11,6 +11,8 @@ Typst language support.
 - **Symbol navigation**: headings, function definitions, variables and labels.
 - **Snippets**: 30+ snippets for common Typst constructs (document setup, figures, math, headings, etc.).
 
+![Typst syntax highlighting at the default editor font size.](.github/demo.png)
+
 ## Installation
 
 To install `language-typst` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-typst`.
