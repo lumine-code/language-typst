@@ -1,16 +1,61 @@
 {
   "title": "language-typst",
-  "description": "Typst syntax highlighting in the editor.",
-  "recordedOn": "2026-10-13",
-  "sourceRevision": "8b1b0b8a811fcc610bcaeee2b986ddb0c5a85cf5",
+  "description": "Typst syntax highlighting at the default editor font size.",
+  "recordedOn": "2026-10-14",
+  "sourceRevision": "0d7f383b375366ef0fbac0f773a2006dd3bc4344",
+  "themeSourceRevision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
   "mode": "normal",
   "fontSettings": "default",
+  "scenario": "demo.js",
+  "recipeHash": "3ee5b9e7ab826001714ad2877368f6328134842cb2c052bf763bf073e9fbb439",
+  "environment": {
+    "platform": "win32",
+    "arch": "x64",
+    "electron": "44.7.0",
+    "chrome": "152.0.7977.130",
+    "devicePixelRatio": 1,
+    "locale": "en-GB",
+    "fontFamily": "Fira Code, Menlo, DejaVu Sans Mono, Consolas, monospace",
+    "fontSize": 14,
+    "themes": ["one-day-syntax", "one-day-ui"]
+  },
+  "viewport": { "width": 1100, "height": 820 },
+  "cornerRadius": 10,
+  "sources": {
+    "editor": {
+      "revision": "0362a9fac7d6e153a768c0381800d6f3eb06647a",
+      "dirty": true,
+      "workingTreeHash": "c4defaf459f08a90cb1517ff7c04fdeeae7e7de98030f65415ee09a97572e9a7"
+    },
+    "package": {
+      "revision": "0d7f383b375366ef0fbac0f773a2006dd3bc4344",
+      "dirty": true,
+      "workingTreeHash": "0a0d7a348170af1476bf122bc68de3921b51f5bd9a2200eaf476a65fdda207a3"
+    },
+    "language-typst": {
+      "revision": "0d7f383b375366ef0fbac0f773a2006dd3bc4344",
+      "dirty": true,
+      "workingTreeHash": "0a0d7a348170af1476bf122bc68de3921b51f5bd9a2200eaf476a65fdda207a3"
+    },
+    "one-theme": {
+      "revision": "14a69683b0e3238e2bc128fbfae3866c1e4ee9c6",
+      "dirty": true,
+      "workingTreeHash": "50ec2f83a6347dd8113870992ec4eb2be4014f3d9e12213c2f51b543f1eca793"
+    }
+  },
+  "fixtures": [
+    {
+      "file": "example.typ",
+      "sha256": "7ad48f0d396d31d116645a7b85025f5787874008a11789a939cb9b7fba637b95"
+    }
+  ],
   "images": [
     {
       "file": "demo.png",
       "label": "Typst syntax highlighting at the default editor font size.",
       "width": 1100,
-      "height": 820
+      "height": 820,
+      "sha256": "c91ab551585021db54f9ca92c594883a2b9be2252e62cb0fa9ecd1b5839726b4"
     }
   ]
 }
