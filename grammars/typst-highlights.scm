@@ -10,7 +10,10 @@
 (field field: (ident) @variable.other.member.typst)
 
 ; COMMENTS
-(comment) @comment.typst
+((comment) @comment.line.typst
+  (#match? @comment.line.typst "^//"))
+((comment) @comment.block.typst
+  (#match? @comment.block.typst "^/\\*"))
 
 ; CONTROL KEYWORDS
 (let "let" @keyword.control.typst)
