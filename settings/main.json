@@ -2,7 +2,11 @@
   ".source.typst": {
     "editor": {
       "commentStart": "// ",
-      "softWrap": true
+      "softWrap": true,
+      "commentDelimiters": {
+        "line": "//",
+        "block": ["/*", "*/"]
+      }
     }
   }
 }

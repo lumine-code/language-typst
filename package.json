@@ -26,7 +26,8 @@
     "THIRD_PARTY_NOTICES"
   ],
   "specPackages": [
-    "snippets"
+    "snippets",
+    "language-source"
   ],
   "scripts": {
     "test": "lumine --test spec",
